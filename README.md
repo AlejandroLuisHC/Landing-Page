@@ -2,13 +2,11 @@
 
 Project started on May 13th:
 
-    May 13th
-
     - Create the repository
     - Set the git to work
     - Create main files of the project
 
-    May 14th
+May 14th
 
     - Work on header
         · Slideshow
@@ -35,13 +33,13 @@ Project started on May 13th:
         · Copyright column
         · Media icons hyperlinks column
 
-    May 15th
+May 15th
 
     - Working on the responsiveness of the topbar
     - Working on the sidebar
         · Fixing topbar and sidebar to the top section of the screen while scrolling
 
-    May 16th
+May 16th
 
     - Working on sidebar content and interaction
     - Footer not displayed appropriately 
