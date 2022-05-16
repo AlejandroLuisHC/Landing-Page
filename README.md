@@ -42,4 +42,7 @@ May 15th
 May 16th
 
     - Working on sidebar content and interaction
-    - Footer not displayed appropriately 
+    - Footer not displayed appropriately (Fixed)
+    - Scrollbar improved
+    - "Latest News" box resized
+    - Slideshow resized

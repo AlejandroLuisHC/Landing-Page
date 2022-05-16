@@ -1,17 +1,28 @@
 body {
     background-color: rgb(68, 66, 70);
+    height: 100%;
+    min-height: 100%;
+    margin: 0;
+    width: 100%;
+}
+body::-webkit-scrollbar {
+    width: 10px;
+}
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #aaa;
+    border-radius: 10px;
+}
+body::-webkit-scrollbar-thumb {
+    background: #bbb;
+    border-radius: 10px;
 }
 
 /* Main content section */
-.main-content {
-    position: absolute;
-    top: 170px;
-    min-height: 100%;
-}
 .content-wrap {
     width: 100%;
-    padding-bottom: 5rem;
+    padding-bottom: 30px;
     padding-right: 30px;
+    margin-top: 0.5%;
 }
 
 /* Welcome section box */
@@ -21,10 +32,8 @@ body {
     background-position: 50% 40%;
     background-size: 100%;
     margin: auto;
-    margin-top: 1%;
     width: 95%;
     border: 2px solid #333;
-    padding: 0px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     border-radius: 10px;
 }
@@ -48,13 +57,13 @@ body {
     -webkit-text-fill-color: white; /* Will override color (regardless of order) */
     -webkit-text-stroke-width: 0.2px;
     -webkit-text-stroke-color: black;
-
 }
 
 /* Latest news section box */
 .news-section-container {
     background-image:url(https://i.gifer.com/WuBj.gif);
     background-size: 100%;
+    min-height: 700px;
     margin: auto;
     margin-top: 1%;
     width: 95%;
@@ -78,11 +87,11 @@ body {
     width: 30%;
     border: 2px solid #333;
     padding: 10px;
-    height: 350px;
+    height: 500px;
     overflow: auto;
 }
 
-/* Hide scrollbars from the news section but keep function */
+/* Hide scrollbars from the news section */
 .column::-webkit-scrollbar {
     display: none;
 }
@@ -97,8 +106,6 @@ body {
     margin-top: 0;
     opacity: 1;
 }
-  
-/* Clear floats after the columns */
 .row:after {
     content: "";
     display: table;
@@ -109,10 +116,9 @@ body {
 .footer-container {
     background-color: #333;
     background-size: 100%; 
-    position: absolute;
-    bottom: 0;
     width: 100%;
-    max-height: 5rem;
+    height: 6rem;
+    max-height: 6rem;
 }
 .footer-column-left {
     float: left;
@@ -122,7 +128,7 @@ body {
 }
 .footer-column-left p {
     font-size: 12px;
-    margin-bottom: 0;
+    margin-bottom: -10px;
 }
 .footer-column-mid {
     float:left;
@@ -131,26 +137,24 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .footer-column-mid p {
-    color: aliceblue;
+    color: whitesmoke;
 }
 .footer-column-right {
     float:right;
     margin: 1%;
     width: 30%;
-    overflow: auto;
 }
 .footer-column-right a {
     float: right;
     margin-right: 50px;
 }
 .footer-column-right a img {
-    height:40px;
+    height: 40px;
 }
 
-@media screen and (max-width: 650px) {
+
+@media screen and (max-width: 600px) {
     .footer-container {
-        position: absolute;
-        bottom: 0px;
         width: 100%;
         max-height: 5rem;
     }
@@ -161,11 +165,10 @@ body {
         margin-left: 8%;
     }
     .footer-column-left p {
-        font-size: 10px;
+        font-size: 11px;
     }
     .footer-column-right a img {
-        margin-top: 10px;
-        height: 21px;
+        margin-top: 20px;
+        height: 23px;
     }
-
 }
