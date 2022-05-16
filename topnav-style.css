@@ -1,57 +1,151 @@
-/* Add a black background color to the top navigation */
-.topnav {
+  /* Logo resize */
+  .logo-container {
+    max-width: 0px;
+    max-height: 0px;
+    margin-bottom: -3px;
+    left: 0;
+    position: absolute;
+  }
+  .logo {
+    width: 180px;
+    height: 48.5px;
+    object-fit: cover;
+    object-position: 50% 42%;
+  }
+
+  /* top navigation */
+  .topnav {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top: 0;
     background-color: #333;
     overflow: hidden;
+    margin-right: -8px;
+    margin-left: -8px;
   }
   
   /* Style the links inside the navigation bar */
   .topnav a {
     float: left;
+    position: relative;
+    left: 42%;
     display: block;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
-  
+
   /* Change the color of links on hover */
   .topnav a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: rgb(228, 228, 228);
+    color: rgb(68, 66, 70);
   }
   
   /* Add an active class to highlight the current page */
   .topnav a.active {
-    background-color: #04AA6D;
-    color: white;
+    background-color: #616161;
+    color: rgb(228, 228, 228);
   }
   
+  /* Style the search box inside the navigation bar */
+ 
+  .topnav input[type=text] {
+    float: right;
+    position: relative;
+    right: 40px;
+    padding: 6px 10px;
+    border: none;
+    margin-top: 10px;
+    margin-right: 16px;
+    font-size: 17px;
+    border-radius: 10px;
+  }
+  
+  .topnav .search-container button {
+    float: right;
+    position: absolute;
+    right: 15px;
+    padding: 6px 10px;
+    margin-top: 10px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  .topnav .search-container button:hover {
+    background: #ccc;
+    border-radius: 50%;
+  }
+
   /* Hide the link that should open and close the topnav on small screens */
   .topnav .icon {
     display: none;
   }
 
 
-
-  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-      float: right;
-      display: block;
+  @media screen and (max-width: 1020px){
+    .search-container{
+      display: none;
     }
   }
   
-  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
+  @media screen and (max-width: 1020px) {
+    .topnav a.icon {
+      float: left;
+      display: block;
+
+    }
+  }
+
+  @media screen and (max-width: 1020px) {
     .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      float: left;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive .search-container{
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: left;
+      margin-left: 48%;
+      display: block;
+    }
+  }
+
+
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive {
+      position: fixed;
+      top: 0;
+    }
     .topnav.responsive a.icon {
       position: absolute;
       right: 0;
       top: 0;
     }
     .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .topnav.responsive .search-container{
       float: none;
       display: block;
       text-align: left;
