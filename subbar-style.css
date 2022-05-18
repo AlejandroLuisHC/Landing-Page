@@ -1,0 +1,82 @@
+.subbar-history {
+    display: none;
+    width: 100%;
+    z-index: 5;
+    max-height: 40px;
+    position: fixed;
+    top: 48.7px;
+}
+.subbar-history a {
+    float: none;
+    max-width: 320px;
+    position: relative;
+    background-color: #222;
+    left: 42%;
+    display: block; 
+    color: #f2f2f2;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.subbar-history a:hover {
+    background-color: rgb(228, 228, 228);
+    color: rgb(68, 66, 70);
+}
+.subbar-guide {
+    display: none;
+    width: 100%;
+    padding: 0;
+    z-index: 5;
+    max-height: 40px;
+    position: fixed;
+    top: 48.7px;
+}
+.subbar-guide a {
+    float: none;
+    max-width: 320px; 
+    background-color: #222;
+    position: relative;
+    left: 42%;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.subbar-guide a:hover {
+    background-color: rgb(228, 228, 228);
+    color: rgb(68, 66, 70);
+}
+
+/* History on hovering displaying */
+.historybtn:hover + .subbar-history {
+    display: block;
+}
+.subbar-history:hover {
+    display: block;
+}
+
+/* Guide on hovering displaying */
+.guidebtn:hover + .subbar-guide {
+    display: block;
+}
+.subbar-guide:hover {
+    display: block;
+}
+
+@media screen and (max-width: 600px){
+    .subbar-guide a{
+        max-width: 42%;
+        height: 48.5px;
+        left:0;
+    }
+    .subbar-history a{
+        max-width: 42%;
+        height: 48.5px;
+        left:0;
+    }
+}

@@ -8,6 +8,7 @@
     <link type="text/css" href="slideshow-style.css" rel="stylesheet">
     <link type="text/css" href="topnav-style.css" rel="stylesheet">
     <link type="text/css" href="sidebar-style.css" rel="stylesheet">
+    <link type="text/css" href="subbar-style.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
@@ -16,14 +17,31 @@
         <div class="topnav" id="myTopnav">
             <!-- The logo -->
             <div class="logo-container">
-                <img class= "logo" src="https://img.freepik.com/vector-gratis/logo-lorem-ipsum-eslogan-aqui-plantilla-arte-diseno_647943-2.jpg?w=2000" 
+                <a href="index.html" style="padding:0;"><img class= "logo" src="https://img.freepik.com/vector-gratis/logo-lorem-ipsum-eslogan-aqui-plantilla-arte-diseno_647943-2.jpg?w=2000" 
                     alt="logo">
+                </a>
             </div>
             <!-- The buttons -->
             <a href="index.html" class="active">HOME</a>
             <a href="news.html">NEWS</a>
-            <a href="#history">HISTORY</a>
-            <a href="#guide">GUIDE</a>
+            <div class="cascadingbtn">
+                <a  class="historybtn" href="#history">HISTORY <i class="fa fa-caret-down"></i></a>
+                <!-- Hystory subbar -->
+                <div class="subbar-history">
+                    <a href="#" class="history-sub">Characters</a>
+                    <a href="#" class="history-sub">World</a>
+                    <a href="#" class="history-sub">Map</a>
+                </div>
+            </div>
+            <div class="cascadingbtn">
+                <a class="guidebtn" href="#guide">GUIDE <i class="fa fa-caret-down"></i></a>
+                <!-- Guide subbar -->
+                <div class="subbar-guide">
+                    <a href="#" class="guide-sub">1st Chapter</a>
+                    <a href="#" class="guide-sub">2nd Chapter</a>
+                    <a href="#" class="guide-sub">Final Chapter</a>
+                </div>
+            </div>
             <!-- The searchbar -->
             <div class="search-container">
                 <form action="/action_page.php">
@@ -39,17 +57,17 @@
         <!-- Slideshow container -->
         <div class="slideshow-container">
             <!-- Full-width images -->
-            <div class="mySlides fade">
+            <div class="mySlides">
                 <img src="https://ca-times.brightspotcdn.com/dims4/default/f652f70/2147483647/strip/true/crop/5389x3153+0+0/resize/1486x869!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fa9%2F5b%2Fc621f3bc408e95c16b4538d87578%2Fla-photos-1staff-amazonstudios-210802a.jpg" 
-                    style="object-position: 50% 37%;">
+                    style="object-position: 50% 40%;">
             </div>
-            <div class="mySlides fade">
+            <div class="mySlides">
                 <img src="https://i.pinimg.com/originals/c5/6b/d1/c56bd1d016ccd315aa9e8d3ec3c78bb7.png" 
-                    style="object-position: 50% 46%;">        
+                    style="object-position: 50% 47%;">        
             </div>
-            <div class="mySlides fade">
+            <div class="mySlides">
                 <img src="https://wallpaperaccess.com/full/3203467.jpg" 
-                    style="object-position: 50% 63%;">
+                    style="object-position: 50% 51%;">
         </div>
     </div>
     </header>
@@ -78,9 +96,7 @@
                 </div>
                 <!-- Latest news box -->
                 <div class="news-section-container">
-
                     <h1>Latest News</h1>
-                    
                     <div class="row">
                         <div class="column">
                             <h2>TITLE</h2>
@@ -136,7 +152,6 @@
                     </div>
                 </div>
             </div>
-
     </main>
     <sidebar>
         <div class="sidebar" id="mySidebar" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()">

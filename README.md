@@ -10,39 +10,51 @@ May 14th
 
     - Work on header
         · Slideshow
-        · Topbar
+        · Top bar
             - Logo
             - Buttons
-            - Searchbar
+            - Search bar
     
     - Work on main container
         · Welcome section
         · Latest news
-    
-    - Working on size responsiveness
-        · Main container
-            - Containers size
-            - Text overflow
-        · Header
-            - Topbar 
-                · Buttons hide and new button appears
-                · Problems with the searchbar
     
     -Work on footer
         · URLs column
         · Copyright column
         · Media icons hyperlinks column
 
+    - Working on size responsiveness
+        · Main container
+            - Containers size
+            - Text overflow
+        · Header
+            - Top bar 
+                · Buttons hide and new button appears
+                · Problems with the search bar
+    
 May 15th
 
-    - Working on the responsiveness of the topbar
+    - Working on the responsiveness of the top bar
     - Working on the sidebar
-        · Fixing topbar and sidebar to the top section of the screen while scrolling
+        · Fixing top bar and sidebar to the top section of the screen while scrolling
 
 May 16th
 
     - Working on sidebar content and interaction
     - Footer not displayed appropriately (Fixed)
-    - Scrollbar improved
+    - Webpage scrollbar redesigned
     - "Latest News" box resized
     - Slideshow resized
+
+May 17th
+
+    - Scrolling function added to the "Welcome section", similar to the scrolling function from the "Latest News" section
+    - Added link to the Landing Page by clicking on the logo at the top bar
+    - Webpage scrollbar resized
+    - Added subcategories to some of the navbar elements
+        · Adding responsive functions 
+    - Working on a better-transitioning slideshow
+        · Implementing fade in and fade out (still not working well)
+    
+     
