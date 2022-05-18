@@ -6,16 +6,17 @@ showSlides();
 function showSlides() {
   let slides = document.getElementsByClassName("mySlides");
 
+  
   if (slideIndexPrev >= slides.length) {slideIndexPrev = 0}
   if (slideIndexCurr >= slides.length) {slideIndexCurr = 0}
   
-  slides[slideIndexCurr].classList.add("fade-out");
-  slides[slideIndexCurr].classList.remove("fade-in");
-  slides[slideIndexPrev].classList.add("fade-in");
-  slides[slideIndexPrev].classList.remove("fade-out");
+  slides[slideIndexCurr].classList.add("fade-in");
+  slides[slideIndexCurr].classList.remove("fade-out");
+  slides[slideIndexPrev].classList.add("fade-out");
+  slides[slideIndexPrev].classList.remove("fade-in");
   
   slideIndexPrev++;
   slideIndexCurr++;
 
-  setTimeout(showSlides, 5000); // Change image every 5 seconds
+  setTimeout(showSlides, 3000); // Change image every X seconds
 }

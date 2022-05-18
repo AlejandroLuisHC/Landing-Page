@@ -19,12 +19,11 @@
 /* Fading animation */
 .fade-in {
   animation-name: fade-in;
-  animation-duration: 2.5s;
+  animation-duration: 1s;
 }
 .fade-out {
   animation-name: fade-out;
-  animation-duration: 2.5s;
-  opacity: 0;
+  animation-duration: 1s;
 }
 
 @keyframes fade-in {

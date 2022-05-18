@@ -57,4 +57,11 @@ May 17th
     - Working on a better-transitioning slideshow
         · Implementing fade in and fade out (still not working well)
     
-     
+May 18th
+    
+    - Working on a better-transitioning slideshow
+        · Implemented fade in and fade out (fixed)
+    - Created "News" page to check the footer section problems
+        · Problem: Footer won't stay at the bottom of the page when content is too short
+        · URL section changed -> Now using a list
+    
